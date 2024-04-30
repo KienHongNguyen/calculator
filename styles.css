@@ -4,26 +4,24 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    background-color: hsl(40, 100%, 50%);
 }
 
 #calculator {
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 15%);
     border-radius: 15px;
-    max-width: 500px;
+    width: 60%;
     overflow: hidden;
 }
 
 #display {
     width: 100%;
     padding: 20px;
-    border-radius: 15px;
     border: none;
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: left;
     background-color: hsl(0, 0%, 20%);
-
     color: white;
 }
 
@@ -67,4 +65,8 @@ button:active {
 
 .operator-btn:active {
     background-color: hsl(35, 100%, 75%);
+}
+
+button.clear {
+    grid-column: 3 / 5;
 }
